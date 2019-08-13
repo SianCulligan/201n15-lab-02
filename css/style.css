@@ -1,3 +1,6 @@
-header {
-    background-color: darkmagenta
+body header h1 {
+    color: red;
+    font-weight: bolder;
+    font-size: x-large;
+
 }
