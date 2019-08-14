@@ -3,7 +3,7 @@
 var userName=prompt('What\'s your name?');
 alert('Hi ' + userName + '. Work experience is great and all, but I want you to get to know me.');
 
-var dogName = prompt('Wanna play a game? I initially tried to name my small dog \'Dogtor Who\', but got turned down. Instead I named him after a baby from Doctor Who in season 6 episode 12 - want to take a guess at his name?')
+var dogName = prompt('Do you want to play a game? I initially tried to name my small dog \'Dogtor Who\', but got turned down. Instead I named him after a baby from Doctor Who in season 6 episode 12 - want to take a guess at his name?')
 dogName = dogName.toUpperCase();
 if (dogName === 'STORMAGEDDON'|| dogName === 'STORMAGEDDON DARK LORD OF ALL' ) {
   alert('YES ' + userName + '. Clearly you\'ve learned that I\'m great at naming dogs. What\'s next?');
@@ -27,6 +27,13 @@ if (diy === 'door' || diy === 'your door'|| diy === 'front door') {
   alert('How did you miss that? It\'s my door, my front door to be exact. I know, my neighbors love me. Next question.');
 }
 
+var teaCups = prompt('Sometimes people even trust me with valuable things, be afraid, be very afraid. I take 40+ year old china and paint them with rude, silly, & fun sayings in fancy handwriting. Guess what that fancy writing is called:');
+teaCups = teaCups.toUpperCase();
+if (teaCups === 'CALLIGRAPHY' ) {
+  alert(userName + ', you really know your stuff! Last question for you, hope you\'ve been paying attention.');
+} else {
+  alert(userName + ', not quite, it\'s actually called Calligraphy. Last question for you, hope you\'ve been paying attention.');
+}
 
 
     // If you had to guess, what would you say is my favorite movie genre? HINT: I've quoted movies from this genre in every question.
