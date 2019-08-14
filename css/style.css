@@ -2,5 +2,8 @@ body header h1 {
     color: red;
     font-weight: bolder;
     font-size: x-large;
+}
 
+img {
+    border-radius: 50%;
 }
