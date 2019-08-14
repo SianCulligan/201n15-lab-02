@@ -53,3 +53,11 @@ p {
     padding: 22px 22px 122px 22px;
     margin: 20px 0px 0px 0px;
 }
+
+.readMore {
+    background-color: #973c3c;
+    font-size: 20px;
+    text-shadow: .75px .75px whitesmoke;
+    text-align: center;
+    text-decoration: black;
+}
