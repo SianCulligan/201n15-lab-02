@@ -10,6 +10,7 @@ if (dogName === 'STORMAGEDDON'|| dogName === 'STORMAGEDDON DARK LORD OF ALL' ) {
 } else {
   alert('Nope - Stormageddon Dark Lork of All is his name. Clearly you\'ve learned that I\'m great at naming dogs. What\'s next?');
 }
+console.log('user\'s guess for my dog\'s name : ' + dogName)
 
 var zombieFlamingos = prompt('Take a stab at this - guess how many Zombie Flamingos I have in my front yard?');
 zombieFlamingos = zombieFlamingos.toLowerCase();
@@ -18,6 +19,7 @@ if (zombieFlamingos === 2 || zombieFlamingos === 'two') {
 } else {
   alert('So close. Correct answer is 2! But nevermind that, let\'s move on to the next one.');
 }
+console.log('user\'s guess for number of zombie flamingos: ' + zombieFlamingos)
 
 var diy = prompt('HERE\'S JOHNNY! Just kidding, my name\'s still Sian, but I did jewel a part of my house, it\'s the same thing Johnny axe\'s down in that iconic scene - take a guess at what it is: ');
 diy = diy.toLowerCase();
@@ -26,6 +28,7 @@ if (diy === 'door' || diy === 'your door'|| diy === 'front door') {
 } else {
   alert('How did you miss that? It\'s my door, my front door to be exact. I know, my neighbors love me. Next question.');
 }
+console.log('user\'s guess for which part of my house is jeweled: ' + diy)
 
 var teaCups = prompt('Sometimes people even trust me with valuable things, be afraid, be very afraid. I take 40+ year old china and paint them with rude, silly, & fun sayings in fancy handwriting. Guess what that fancy writing is called:');
 teaCups = teaCups.toUpperCase();
@@ -34,7 +37,7 @@ if (teaCups === 'CALLIGRAPHY' ) {
 } else {
   alert(userName + ', not quite, it\'s actually called Calligraphy. Last question for you, hope you\'ve been paying attention.');
 }
-
+console.log('user\'s guess for name of fancy handwriting: ' + teaCups)
 
 var movieGenre = prompt('If you had to guess, what would you guess is my favorite movie genre? HINT: I\'ve quoted movies from this genre in every question.');
 movieGenre = movieGenre.toLowerCase();
@@ -47,17 +50,4 @@ if (movieGenre === 'horror') {
 } else {
   alert('IT\'S ALIVE! Wait, are you alive? I noticed you didn\'t guess. Horror is my genre, and this is my page, enjoy!');
 }
-
-    // 
-//var hobbies;
-// var diy;
-//var photo;
-//var calligraphy;
-//var movieType;
-
-//document.quertSelector('#buttonTest').addEventListener('click', promptMe);
-
-//function promptMe(){
-  //
- // alert(hobbies)
-//}
+console.log('user\'s guess for my favorite genre: ' + movieGenre)
