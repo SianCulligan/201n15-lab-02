@@ -19,8 +19,17 @@ if (zombieFlamingos === 2 || zombieFlamingos === 'two') {
   alert('So close. Correct answer is 2! But nevermind that, let\'s move on to the next one.');
 }
 
+var diy = prompt('HERE\'S JOHNNY! Just kidding, my name\'s still Sian, but I did jewel a part of my house, it\'s the same thing Johnny axe\'s down in that iconic scene - take a guess at what it is: ');
+diy = diy.toLowerCase();
+if (diy === 'door' || diy === 'your door'|| diy === 'front door') {
+  alert('NAILED IT! Isn\'t DIY fun!? Next question.');
+} else {
+  alert('How did you miss that? It\'s my door, my front door to be exact. I know, my neighbors love me. Next question.');
+}
 
-    // If you had to guess, what would you say is my favorite movie genre? HINT: I've given you hints in each question!
+
+
+    // If you had to guess, what would you say is my favorite movie genre? HINT: I've quoted movies from this genre in every question.
 //var hobbies;
 // var diy;
 //var photo;
