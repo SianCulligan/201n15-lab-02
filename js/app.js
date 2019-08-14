@@ -36,7 +36,19 @@ if (teaCups === 'CALLIGRAPHY' ) {
 }
 
 
-    // If you had to guess, what would you say is my favorite movie genre? HINT: I've quoted movies from this genre in every question.
+var movieGenre = prompt('If you had to guess, what would you guess is my favorite movie genre? HINT: I\'ve quoted movies from this genre in every question.');
+movieGenre = movieGenre.toLowerCase();
+if (movieGenre === 'horror') {
+  alert('Do you like scary movies?! Cause I sure do! Good work ' + userName + '. Thanks for getting to know me!');
+} else if {movieGenre === 'comedy') {
+  alert('');
+} else if {movieGenre === 'romance') {
+  alert('Gross. I\'d much prefer zombies and creatures, horror movies are my jam. Thanks for playing!');
+} else {
+  alert('IT\'S ALIVE! Wait, are you alive? I noticed you didn\'t guess. Horror is my genre, and this is my page, enjoy!');
+}
+
+    // 
 //var hobbies;
 // var diy;
 //var photo;
