@@ -1,8 +1,11 @@
+.lenaSketch {
+    width: 200px;
+}
+
 img {
     border-radius: 50%;
     border: 1px solid #835959;
     height: 200px;
-    width: 200px;
     float: left;
     margin: 50px;
 }
@@ -55,7 +58,7 @@ p {
 }
 
 .readMore {
-    background-color: #973c3c;
+    background-color: #357285;
     font-size: 20px;
     text-shadow: .75px .75px whitesmoke;
     text-align: center;
