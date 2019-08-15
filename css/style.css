@@ -35,7 +35,7 @@ header {
 }
 
 body {
-    background: lightblue
+    background: rgb(233, 194, 194)
 }
 
 .myName {
@@ -60,11 +60,30 @@ p {
 .readMore {
     background-color: #357285;
     font-size: 20px;
-    text-shadow: .75px .75px whitesmoke;
+    text-shadow: .75px .75px black;
     text-align: center;
-    text-decoration: black;
+    color: whitesmoke;
 }
 
-img:hover {
-    background-color: rgb(255, 255, 255)
+#testButton {
+    background-color: #357285;
+    background-image: url(https://images.unsplash.com/photo-1471138406156-7a89e687a062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    image-rendering: pixelated;
+    color: white;
+    text-shadow: 1px black;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    font-size-adjust: unset;
+    font-size: xx-large;
+    display: inline-block;
+}
+
+.jobTitles:hover {
+    opacity: 0.3;
+}
+
+#testButton:hover {
+    opacity: 0.3;
 }

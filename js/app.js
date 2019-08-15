@@ -29,7 +29,7 @@ function myFunction() {
   if (diy === 'door' || diy === 'your door'|| diy === 'front door') {
     alert('NAILED IT! Isn\'t DIY fun!? Next question.');
   } else {
-    alert('How did you miss that? It\'s my door, my front door to be exact. I know, my neighbors love me. Next question.'); 
+    alert('How did you miss that? It\'s my door, my front door to be exact. I know, my neighbors love me. Next question.');
   }
   console.log('user\'s guess for which part of my house is jeweled: ' + diy);
 
