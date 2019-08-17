@@ -4,7 +4,7 @@
 
 img {
     border-radius: 50%;
-    border: 1px solid #835959;
+    border: 5px solid #346d32;
     height: 200px;
     float: left;
     margin: 50px;
@@ -15,50 +15,55 @@ header h1{
     font-size: 50px;
     text-align: left;
     float: left;
-    margin: 20px 20px 20px 20px;
-    text-shadow: 2px 2px black;
+    margin: 20px 20px 20px -82px;
+    text-shadow: 5px 1px  black;
 }
 
 header nav {
     text-align: right;
     float: right;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
     text-shadow: 2px 2px black;
 }
 
 header {
     font-family: monospace;
     padding: 100px;
-    background-image: url(https://images.unsplash.com/photo-1506508839781-65d2a514b73a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1706&q=80);
-    background-size: 3000px;
-    color: white;
+    background-image: url(https://images.unsplash.com/photo-1450704944629-6a65f6810cf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80);
+    color: #346d32;
 }
 
 body {
-    background: rgb(233, 194, 194)
+    background-image: url(https://images.unsplash.com/photo-1523956028025-95b0b9efe908?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1229&q=80);
+    width:100%;
+    height: 100%;
 }
 
 .myName {
-    font-family: monospace;
     font-size: 50px;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.849);
+    color: whitesmoke;
+    text-shadow: 1px 5px #346d32;
     padding: 0px 0px 0px 20px;
 }
 
-p {
+html {
     font-family: monospace;
 }
 
-.intro {
-    float: none;
+#introBox {
+    display: inline-block;
+    background: white;
+    border: 2px solid #346d32;
     text-align: left;
+    width: 500px;
+    height: 50px;
     font-size: 1.4em;
     padding: 22px 22px 122px 22px;
     margin: 20px 0px 0px 0px;
 }
 
 .readMore {
-    background-color: #357285;
+    background-color: #4b0626;
     font-size: 20px;
     text-shadow: .75px .75px black;
     text-align: center;
@@ -67,23 +72,52 @@ p {
 
 #testButton {
     background-color: #357285;
-    background-image: url(https://images.unsplash.com/photo-1471138406156-7a89e687a062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-    image-rendering: pixelated;
+    background-image: url(https://images.unsplash.com/photo-1499428665502-503f6c608263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
     color: white;
     text-shadow: 1px black;
     font-family: monospace;
+    height: 100px;
+    width: 400px;
+    flex-shrink: initial;
     text-align: center;
     padding: 20px;
     margin: 50px;
+    border-radius: 10%;
     font-size-adjust: unset;
     font-size: xx-large;
     display: inline-block;
+    cursor: crosshair;
 }
 
 .jobTitles:hover {
     opacity: 0.3;
+    cursor: crosshair;
+
+}
+
+.jobTitles {
+    display: inline-block;
 }
 
 #testButton:hover {
     opacity: 0.3;
+}
+
+.title {
+    color: #cc6300;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.desc {
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.jobExperience {
+    display: inline-block;
+    padding: 10% ;
+    margin: 20% 0% 0% -50%;
+    box-align: left;
 }
