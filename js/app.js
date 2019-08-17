@@ -81,7 +81,7 @@ function myFunction() {
   var nonTravel = prompt('Ok, now you know a lot, but did you know that I have a goal to drive through all 50 states? There\'s only a few I haven\'t been to yet, can you guess which ones?');
   nonTravel = nonTravel.toLowerCase();
 
-  for(var i = 0; i < 5; i++) {
+  for(var ii = 0; ii < 5; ii++) {
     if (nonTravel === myArray[0] || nonTravel === myArray[1] || nonTravel === myArray[2] || nonTravel === myArray[3]){
       alert ('You\'re right! I haven\'t been there yet, but I\'m sure I\'ll make it there someday.'); break;
     } else {
