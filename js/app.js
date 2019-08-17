@@ -1,3 +1,4 @@
+/* eslint-disable no-cond-assign */
 'use strict';
 
 document.getElementById('testButton').addEventListener('click', myFunction);
@@ -69,27 +70,24 @@ function myFunction() {
   //   console.log('user\'s guess for my favorite number: ' + favNumber);
   // }
 
-  var myArray = ['Maryland', 'Maine', 'Oklahoma', 'Virginia'];
-  var arrayAnswers = [
-    'You\'re right! I haven\'t been to Maryland yet, I\'ll make it there someday. ',
-    'You\'re right! I haven\'t been to Maine yet, I\'ll make it there someday. ',
-    'You\'re right! I haven\'t been to Oklahoma yet, I\'ll make it there someday. ',
-    'You\'re right! I haven\'t been to Virginia yet, I\'ll make it there someday. ',
-  ];
+  var myArray = ['maryland', 'maine', 'oklahoma', 'virginia'];
+  // var arrayAnswers = [
+  //   'You\'re right! I haven\'t been to Maryland yet, I\'ll make it there someday. ',
+  //   'You\'re right! I haven\'t been to Maine yet, I\'ll make it there someday. ',
+  //   'You\'re right! I haven\'t been to Oklahoma yet, I\'ll make it there someday. ',
+  //   'You\'re right! I haven\'t been to Virginia yet, I\'ll make it there someday. ',
+  // ]; Counld not get this to work - will try again later
 
-  var nonTravel = prompt('Ok, now you know a lot, but did you know that I have a goal to visit all 50 states? There\'s only a few I haven\'t been to yet, can you guess which ones?');
+  var nonTravel = prompt('Ok, now you know a lot, but did you know that I have a goal to drive through all 50 states? There\'s only a few I haven\'t been to yet, can you guess which ones?');
   nonTravel = nonTravel.toLowerCase();
+
   for(var i = 0; i < 5; i++) {
-    if (nonTravel === myArray [0]) {
-      alert (arrayAnswers[0]); break;
-    } else if (nonTravel === myArray [1]) {
-      alert (arrayAnswers[1]); break;
-    } else if (nonTravel === myArray [2]) {
-      alert (arrayAnswers[2]); break;
-    } else if (nonTravel === myArray [3]) {
-      alert (arrayAnswers[3]); break;     
-    } else (
-      prompt('Been there! Try again!'));
+    if (nonTravel === myArray[0] || nonTravel === myArray[1] || nonTravel === myArray[2] || nonTravel === myArray[3]){
+      alert ('You\'re right! I haven\'t been there yet, but I\'m sure I\'ll make it there someday.'); break;
+    } else {
+      prompt('Been there! Try again!');
+    }
   }
-  alert('Nice try! But I still need to make it out to ' + myArray[0] + ', ' + myArray[1] + ', ' + myArray[2] + ', & ' + myArray[3]);
+  alert('Only a couple to check off my list! I still need to make it out to ' + myArray[0] + ', ' + myArray[1] + ', ' + myArray[2] + ', & ' + myArray[3]);
+
 }
