@@ -70,13 +70,26 @@ function myFunction() {
   // }
 
   var myArray = ['Maryland', 'Maine', 'Oklahoma', 'Virginia'];
+  var arrayAnswers = [
+    'You\'re right! I haven\'t been to Maryland yet, I\'ll make it there someday. ',
+    'You\'re right! I haven\'t been to Maine yet, I\'ll make it there someday. ',
+    'You\'re right! I haven\'t been to Oklahoma yet, I\'ll make it there someday. ',
+    'You\'re right! I haven\'t been to Virginia yet, I\'ll make it there someday. ',
+  ];
+
   var nonTravel = prompt('Ok, now you know a lot, but did you know that I have a goal to visit all 50 states? There\'s only a few I haven\'t been to yet, can you guess which ones?');
+  nonTravel = nonTravel.toLowerCase();
   for(var i = 0; i < 5; i++) {
-    if (nonTravel === myArray [0] || nonTravel === myArray [1] ||nonTravel === myArray [2]||nonTravel === myArray [3]) {
-      alert ('Nailed it! I\'ll make it there someday!'); break;
-    } else {
-      nonTravel = prompt('Been there! Try again!');
-    }
+    if (nonTravel === myArray [0]) {
+      alert (arrayAnswers[0]); break;
+    } else if (nonTravel === myArray [1]) {
+      alert (arrayAnswers[1]); break;
+    } else if (nonTravel === myArray [2]) {
+      alert (arrayAnswers[2]); break;
+    } else if (nonTravel === myArray [3]) {
+      alert (arrayAnswers[3]); break;     
+    } else (
+      prompt('Been there! Try again!'));
   }
   alert('Nice try! But I still need to make it out to ' + myArray[0] + ', ' + myArray[1] + ', ' + myArray[2] + ', & ' + myArray[3]);
 }
