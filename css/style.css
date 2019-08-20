@@ -56,11 +56,13 @@ html {
     background: white;
     border: 2px solid #346d32;
     text-align: left;
-    width: 500px;
-    height: 50px;
-    font-size: 1.4em;
-    padding: 22px 22px 122px 22px;
-    margin: 20px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    font-size: 1em;
+    padding: 22px 22px 122px 2px;
+    margin: 20px 20px 20px 20px;
+    /* transform: rotate(30deg);  
+    float: left; */
 }
 
 .readMore {
