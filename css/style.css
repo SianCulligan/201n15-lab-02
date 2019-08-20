@@ -124,3 +124,7 @@ html {
     margin: 20% 0% 0% -10%;
     box-align: left;
 }
+
+.chuckNorris {
+    border: 5px solid black;
+}
