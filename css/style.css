@@ -128,3 +128,9 @@ html {
 .chuckNorris {
     border: 5px solid black;
 }
+
+.cnHeader {
+    color: #cc6300;
+    font-weight: bold;
+    font-size: 20px;
+}
