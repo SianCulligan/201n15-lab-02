@@ -1,4 +1,6 @@
 # 201n15-lab-02
+<!-- TODO: specify what the project is and directions for running the program -->
+
 201n15 lab 02
 
 Images found at unsplash.com
