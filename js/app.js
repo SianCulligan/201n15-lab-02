@@ -1,7 +1,7 @@
 /* eslint-disable no-cond-assign */
 
 // TODO: the 7th question (and everything about the 7th question the lab instructions specify
-// TODO: tally the user's total correct answer and alert it to the user at the end
+
 'use strict';
 
 document.getElementById('testButton').addEventListener('click', myFunction);
@@ -11,8 +11,9 @@ function myFunction() {
   alert('Hi ' + userName + '. Work experience is great and all, but I want you to get to know me.');
 
   // keeps track of user score
-var plusOne = 0;
+  var plusOne = 0;
 
+  //question one - t/f
   var dogName = prompt('Do you want to play a game? True or false: I named my small dog Stormageddon Dark Lord of All.');
   dogName = dogName.toUpperCase();
   if (dogName === 'TRUE') {
@@ -24,9 +25,10 @@ var plusOne = 0;
 
 
 
+  //question two - open answer
   var zombieFlamingos = prompt('Take a stab at this - guess how many Zombie Flamingos I have in my front yard?');
   zombieFlamingos = zombieFlamingos.toLowerCase();
-  if (zombieFlamingos === 2 || zombieFlamingos === 'two') {
+  if (parseInt(zombieFlamingos) === 2 || zombieFlamingos === 'two') {
     alert('You got it! You\'re so clever ' + userName + '. Let\'s try something a little more difficult.'); plusOne++;
   } else {
     alert('So close. Correct answer is 2! But nevermind that, let\'s move on to the next one.');
@@ -49,15 +51,15 @@ var plusOne = 0;
   var teaCups = prompt('True or False: Sometimes people even trust me with valuable things; I know - be afraid, be very afraid. I take 40+ year old china and paint them with rude, silly, & fun sayings.');
   teaCups = teaCups.toUpperCase();
   if (teaCups === 'TRUE') {
-    alert(userName + ', you really know your stuff! Last question for you, hope you\'ve been paying attention.'); plusOne++;
+    alert(userName + ', you really know your stuff! But wait, there\'s more! Hope you\'ve been paying attention.'); plusOne++;
   } else {
-    alert(userName + ', not quite, it\'s actually called Calligraphy. Last question for you, hope you\'ve been paying attention.');
+    alert(userName + ', nope. I really do paint old china & give them new life! But wait, there\'s more! Hope you\'ve been paying attention.');
   }
-  console.log('user\'s guess for name of fancy handwriting: ' + teaCups);
+  console.log('user\'s guess, true or false ' + teaCups);
 
 
 
-  var movieGenre = prompt('If you had to guess, what would you guess is my favorite movie genre? HINT: I\'ve referenced or quoted movies from this genre in every question.');
+  var movieGenre = prompt('What would you guess is my favorite movie genre? HINT: I\'ve referenced or quoted movies from this genre in every question.');
   movieGenre = movieGenre.toLowerCase();
   if (movieGenre === 'horror') {
     alert('Do you like scary movies?! Cause I sure do! Good work ' + userName); plusOne++;
@@ -78,15 +80,15 @@ var plusOne = 0;
     if (parseInt(favNumber) === 11) {
       alert('Have we met? Because you obviously know me. Nice job, ' + userName); plusOne++; break;
     } else if (parseInt(favNumber) < 11) {
-      favNumber = prompt('Not quite, try something a little higher than ' + favNumber);
-    } else if (parseInt(favNumber) > 11) {
-      favNumber = prompt('Not quite, try something a little lower than ' + favNumber) ;
+      favNumber = prompt(`Not quite, try something a little higher than ${favNumber}`);
+    } else {
+      favNumber = prompt(`Not quite, try something a little lower than ${favNumber}.`);
     }
-    alert('Not quite. the number I was looking for is 11.');
     console.log('user\'s guess for my favorite number: ' + favNumber);
   }
 
-  var myArray = ['Maryland', 'Maine', 'Oklahoma', 'Virginia'];
+  var myArray = ['maryland', 'maine', 'oklahoma', 'virginia'];
+  //pulls answers from an array rather than a full string
   // var arrayAnswers = [
   //   'You\'re right! I haven\'t been to Maryland yet, I\'ll make it there someday. ',
   //   'You\'re right! I haven\'t been to Maine yet, I\'ll make it there someday. ',
@@ -98,7 +100,6 @@ var plusOne = 0;
   nonTravel = nonTravel.toLowerCase();
 
   for(var ii = 0; ii < 5; ii++) {
-    myArray = myArray.toLowerCase();
     if (nonTravel === myArray[0] || nonTravel === myArray[1] || nonTravel === myArray[2] || nonTravel === myArray[3]){
       alert ('You\'re right! I haven\'t been there yet, but I\'m sure I\'ll make it there someday.'); plusOne++; break;
     } else {
@@ -107,5 +108,5 @@ var plusOne = 0;
   }
   alert('Only a couple to check off my list! I still need to make it out to ' + myArray[0] + ', ' + myArray[1] + ', ' + myArray[2] + ', & ' + myArray[3]);
 
-  alert(`Ok ${userName} that's enough of that. You scored ${plusOne} out of 7. Nice work!`);
+  alert(`Ok ${userName} that's enough of that. You scored ${plusOne} out of 7.`);
 }
